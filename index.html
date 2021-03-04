@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teorema de Pítagoras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='shortcut icon' href='imagens/favicon.ico'>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="painel">
+
+        <div class="logo"> 
+            <img id="imagem" src="imagens/normal.gif" alt=""><br>
+        </div>
+
+        <div id="caixa-texto">
+            <h1 id="h1">TEOREMA DE PITÁGORAS</h1>
+            <p class="texto">
+                <h9 id="h9">O teorema de Pitágoras diz que o quadrado da hipotenusa é igual à 
+                    soma dos quadrados dos catetos. Podemos utilizar esse teorema para facilitar 
+                    o cálculo da diagonal de um quadrado e altura de um 
+                    triângulo equilátero (triângulo com os 3 lados iguais)<br>
+                    Digite os valore abaixo:
+                </h9>
+            </p>
+        </div>
+
+
+            <div class="form">
+                
+                <div class="fields">
+                    
+                    <div class="catetoA">
+                        <input type="number" id ="c1" min=1 placeholder="Cateto A"
+                        onclick="ladoA()" onmouseout="sair()">
+                    </div>
+
+                    <div class="catetoB">
+                        <input type="number" id ="c2" min=1 placeholder="Cateto B"
+                        onclick="ladoB()" onmouseout="sair()">     
+                    </div>
+
+                </div>
+
+                    <div class="calcular">
+                        <button class="signin-button-calcular" value="Calcular" onclick="calcular()">
+                        Calcular
+                        </button>
+                    </div>
+        
+                    <div class="limpar">
+                        <button class="signin-button-limpar" id="clean" onclick="limpa()">
+                            Limpar
+                        </button>
+                    </div>
+
+                    <div id ="res" onmouseenter= "ladoC()" onmouseout="sair()" style='font-size:27px;'>
+                        Resultado:
+                    </div>
+
+            </div>
+        </div>
+
+
+        
+
+
+
+    </div>
+
+
+    <script src='javascript/index.js'></script>
+    <script src='javascript/imagem.js'></script>
+
+</body>
+</html>
