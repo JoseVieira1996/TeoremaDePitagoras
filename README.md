@@ -1,3 +1,3 @@
 # TeoremaDePitagoras
 
-Projetinho desenvolvido para um teste
+Projetinho desenvolvido co JavaScript para um teste
